@@ -6,12 +6,13 @@
     <script src="login.js"></script>
 </head>
 <body>
-    <div class="login_form" name="login_form" method="POST">
+    <div class="login_form" name="login_form" method="POST" >
         <form method="POST" class="lg_form" action="other_details">
             {% csrf_token %}
             {{ form.as_p }}
+            <br />
             <button type="submit" class="save btn btn-default">Save</button>
-    </form>
+    </form><!--end form-->
     </div><!--end login_form-->
 </body>
 </html>
