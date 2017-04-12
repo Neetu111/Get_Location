@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get The Pin</title>
+</head>
+<body>
+    <div class="info_form" name="info_form" method="POST">
+        <form method="POST" class="if_form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Get Pincode</button>
+        </form>
+    </div><!--end info_form-->
+
+</body>
+</html>

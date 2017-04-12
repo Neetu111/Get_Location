@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="login_form" name="login_form" method="POST">
+        <form method="POST" class="lg_form" action="other_details">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+    </div><!--end login_form-->
+</body>
+</html>
